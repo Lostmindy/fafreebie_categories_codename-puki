@@ -1,0 +1,118 @@
+<!-- ------------------------- 
+Mise en page des catégories
+Code originellement conçu en 2012 pour Puki sur SOS RPG
+----
+CSS & HTML réalisés par 'Christa 
+Reproduction et redistribution interdites
+Modifications partielles autorisées
+----
+Il est strictement interdit de retirer
+les crédits présents dans ce code.
+--------------------------------------
+CREDITS // DEBUT DU CODE -->
+
+<!-- BEGIN catrow -->
+
+    <!-- BEGIN tablehead -->
+    <div class="forumline lmcat">
+        <div class="lmcat__categ-entete">
+            <div class="lmcat__categ-titre">
+                {catrow.tablehead.L_FORUM}
+            </div>
+        </div>
+        <div class="lmcat__categ-contenu">
+    <!-- END tablehead -->
+
+    <!-- BEGIN cathead -->
+            <!-- BEGIN inc -->
+            <div class="lmcat__categ-spacer">
+            <!-- END inc -->
+
+                <div class="lmcat__categ-titre-sub">
+                    <h {catrow.cathead.LEVEL} class="hierarchy">
+                        <span class="cattitle">
+                            <a class="cattitle" title="{catrow.cathead.CAT_DESC}" href="{catrow.cathead.U_VIEWCAT}">{catrow.cathead.CAT_TITLE}</a>
+                        </span>
+                    </h {catrow.cathead.LEVEL}>
+                </div>
+
+            <!-- BEGIN inc -->
+            </div>
+            <!-- END inc -->
+    <!-- END cathead -->
+
+    <!-- BEGIN forumrow -->
+            <!-- BEGIN inc -->
+            <div class="lmcat__categ-spacer">
+                <!-- END inc -->
+
+                <div class="lmcat__forum">
+                    <div class="lmcat__forum-ico lmcat__forum-hauteur">
+                        <img title="{catrow.forumrow.L_FORUM_FOLDER_ALT}" src="{catrow.forumrow.FORUM_FOLDER_IMG}" alt="{catrow.forumrow.L_FORUM_FOLDER_ALT}" />
+                    </div>
+                    <div class="lmcat__forum-contenu lmcat__forum-espacement">
+                        <h3 class="lmcat__forum-titre">
+                            <a href="{catrow.forumrow.U_VIEWFORUM}" class="lmcat__forum-titre--lien">{catrow.forumrow.FORUM_NAME}</a>
+                        </h3>
+                        <div class="genmed lmcat__forum-description lmcat__forum-scrollauto">
+                            {catrow.forumrow.FORUM_DESC}
+                            <!-- BEGIN switch_moderators_links -->
+                            <span class="gensmall">
+                                {catrow.forumrow.switch_moderators_links.L_MODERATOR}{catrow.forumrow.switch_moderators_links.MODERATORS}
+                            </span>
+                            <!-- END switch_moderators_links -->
+                        </div>
+                        <div class="lmcat__forum-sousforums lmcat__forum-espacement">{catrow.forumrow.LINKS}</div>
+                        <div class="gensmall lmcat__forum-stats">{catrow.forumrow.POSTS} messages dans
+                            {catrow.forumrow.TOPICS} sujets</div>
+
+                        <div class="gensmall lmcat__forum-dernierpost">
+                            <div class="lmcat__forum-dernierpost--survol">
+                                <strong class="lmcat__forum-dernierpost--label">Dernier message&nbsp;:</strong>
+
+                                <!-- BEGIN avatar -->
+                                <span class="lmcat__forum-dernierpost--ava">{catrow.forumrow.avatar.LAST_POST_AVATAR}</span>
+                                <!-- END avatar -->
+
+                                <div class="lmcat__forum-dernierpost--info">
+                                    <!-- BEGIN switch_topic_title -->
+                                    <a href="{catrow.forumrow.U_LATEST_TOPIC}" title="{catrow.forumrow.LATEST_TOPIC_TITLE}"
+                                        class="lmcat__forum-dernierpost--lien">{catrow.forumrow.LATEST_TOPIC_NAME}</a><br />
+                                    <!-- END switch_topic_title -->
+                                    {catrow.forumrow.USER_LAST_POST}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            <!-- BEGIN inc -->
+            </div>
+            <!-- END inc -->
+
+    <!-- END forumrow -->
+
+    <!-- BEGIN tablefoot -->
+
+        </div> <!-- / lmcat__categ-contenu -->
+    </div> <!-- / lmcat -->
+
+    <!-- END tablefoot -->
+
+<!-- END catrow -->
+<div class="lmcat__credits">
+    <div>Mise en page des catégories par <strong>'Christa Lostmindy</strong>. <br /
+        >Reproduction et redistribution interdites en vertu du code de la propriété intellectuelle.</div>
+</div>
+
+
+<!-- FIN DE CODE // CREDITS
+------------------------------------ 
+Mise en page des catégories
+----
+Reproduction et redistribution interdites
+Modifications partielles du code autorisées
+Merci de conserver les crédits de ce code
+--------------------------------------
+-->
